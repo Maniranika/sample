@@ -1,0 +1,92 @@
+.pricing-item {
+  box-shadow: 0 1px 6px rgb(60 64 67 / 30%);
+  border-radius: 8px;
+  background-color: #fff;
+  width: 256px;
+  margin: 12px;
+  height: 580px;
+  font-size: 14px;
+}
+
+.pricing-item__inner-container {
+  background: #fff;
+  margin: 4px;
+  border-radius: 4px;
+  height: calc(100% - 8px);
+}
+
+.pricing-item--recommended {
+  background: linear-gradient(90deg, #34a853 4%, #4285f4 0%) top/100% 34%
+      no-repeat,
+    linear-gradient(90deg, #fbbc04 50%, #4285f4 0%) top/100% 82% no-repeat,
+    linear-gradient(90deg, #fbbc04 10%, #ea4335 0%) top/100% 100%;
+}
+
+.pricing-item__top-part {
+  text-align: center;
+  height: 350px;
+}
+
+.pricing-item__storage-size {
+  padding-top: 50px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.pricing-item__recommended-label {
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.pricing-item__recommended-label + .pricing-item__storage-size {
+  padding-top: 23px;
+}
+
+.pricing-item__bottom-part {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 20px 6px 24px 14px;
+}
+
+.pricing-item__includes-label {
+  margin-bottom: 7px;
+  font-weight: 400;
+}
+
+.pricing-item__features-list {
+  margin-left: 8px;
+}
+
+.pricing-item__feature {
+  padding: 4px 0;
+}
+
+.pricing-item__checkmark {
+  margin-right: 16px;
+  color: #4285f4;
+  display: inline;
+}
+
+.pricing-item__prices {
+  margin-top: 48px;
+}
+
+.pricing-item__year-save-label {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.pricing-item__store-credit {
+  display: flex;
+  align-items: center;
+  margin: 8px 5px;
+  padding: 8px 12px;
+  text-align: left;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.pricing-item__store-credit img {
+  height: 23px;
+  width: 24px;
+  margin-right: 12px;
+}
