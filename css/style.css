@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    min-height: 480px;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.left-box,
+.right-box {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-box {
+    background: #fff;
+}
+
+.right-box {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+}
+
+.left-box h2,
+.right-box h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: background 0.3s;
+}
+
+.social-icons a:hover {
+    background: #ddd;
+}
+
+.left-box p {
+    font-size: 14px;
+    color: #777;
+    margin: 15px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.forgot {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    color: #ff4b2b;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff4b2b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.primary-btn:hover {
+    background: #e84322;
+}
+
+.right-box p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.outline-btn {
+    padding: 12px 25px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.outline-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        min-height: auto;
+        max-width: 100%;
+    }
+    .left-box,
+    .right-box {
+        padding: 20px;
+    }
+    .left-box h2,
+    .right-box h2 {
+        font-size: 22px;
+    }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-box h2,
+    .right-box h2 {
+        font-size: 20px;
+    }
+    form input,
+    .primary-btn,
+    .outline-btn {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
